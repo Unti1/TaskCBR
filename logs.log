@@ -335,3 +335,24 @@ redis.exceptions.ConnectionError: Error 11001 connecting to redis://localhost:63
 23:02:04 - dispatcher
 [INFO] feed_update:
  172 - Update id=899880065 is handled. Duration 328 ms by bot id=6624200761
+23:04:10 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+23:04:10 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+23:04:10 - base
+[INFO] start:
+ 181 - Scheduler started
+23:04:11 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+23:04:11 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+23:04:17 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880066 is handled. Duration 312 ms by bot id=6624200761
+23:04:46 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880067 is handled. Duration 264 ms by bot id=6624200761
