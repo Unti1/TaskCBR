@@ -1,0 +1,337 @@
+21:19:31 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+21:19:31 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+21:19:31 - base
+[INFO] start:
+ 181 - Scheduler started
+21:19:32 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+21:19:32 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+21:19:32 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880052 is not handled. Duration 0 ms by bot id=6624200761
+21:19:32 - dispatcher
+[ERROR] _process_update:
+ 315 - Cause exception while process update id=899880052 by bot id=6624200761
+TypeError: CurrencyServiceMiddleware.__init__() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CurrencyServiceMiddleware.__init__() takes 2 positional arguments but 4 were given
+21:20:46 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+21:20:46 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+21:20:46 - base
+[INFO] start:
+ 181 - Scheduler started
+21:20:46 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+21:20:46 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+21:22:11 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+21:22:11 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+21:22:11 - base
+[INFO] start:
+ 181 - Scheduler started
+21:22:14 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+21:22:14 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+21:24:24 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+21:24:24 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+21:24:24 - base
+[INFO] start:
+ 181 - Scheduler started
+21:24:25 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+21:24:25 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+21:24:51 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+21:24:51 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+21:24:51 - base
+[INFO] start:
+ 181 - Scheduler started
+21:24:51 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+21:24:51 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+22:01:02 - dispatcher
+[ERROR] _listen_updates:
+ 219 - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+22:01:02 - dispatcher
+[WARNING] _listen_updates:
+ 221 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6624200761)
+22:01:13 - dispatcher
+[INFO] _listen_updates:
+ 233 - Connection established (tryings = 1, bot id = 6624200761)
+22:35:42 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+22:35:42 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+22:35:42 - base
+[INFO] start:
+ 181 - Scheduler started
+22:35:42 - currency_service
+[ERROR] update_currency_rates:
+ 33 - Error updating currency rates: Error 11001 connecting to redis://localhost:6379. getaddrinfo failed.
+Traceback (most recent call last):
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\redis\connection.py", line 276, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\redis\connection.py", line 277, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\redis\connection.py", line 607, in _connect
+    for res in socket.getaddrinfo(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Projects\Work\TestTasks\TaskCBR\tools\currency_service.py", line 29, in update_currency_rates
+    self.parse_xml(xml_data)
+  File "c:\Projects\Work\TestTasks\TaskCBR\tools\currency_service.py", line 18, in parse_xml
+    self.redis.set('last_update', date)
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\redis\commands\core.py", line 2342, in set
+    return self.execute_command("SET", *pieces, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\redis\client.py", line 542, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\redis\connection.py", line 1109, in get_connection
+    connection.connect()
+  File "C:\Users\Unti1\AppData\Local\pypoetry\Cache\virtualenvs\taskcbr-pVknlF28-py3.11\Lib\site-packages\redis\connection.py", line 282, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 11001 connecting to redis://localhost:6379. getaddrinfo failed.
+
+22:35:42 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+22:35:42 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+22:46:07 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+22:46:07 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+22:46:07 - base
+[INFO] start:
+ 181 - Scheduler started
+22:46:07 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+22:46:07 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+22:46:14 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880053 is handled. Duration 312 ms by bot id=6624200761
+22:46:16 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880054 is handled. Duration 155 ms by bot id=6624200761
+22:47:26 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+22:47:26 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+22:47:26 - base
+[INFO] start:
+ 181 - Scheduler started
+22:47:27 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+22:47:27 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+22:51:23 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880055 is handled. Duration 391 ms by bot id=6624200761
+22:51:42 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880056 is handled. Duration 312 ms by bot id=6624200761
+22:52:16 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+22:52:16 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+22:52:16 - base
+[INFO] start:
+ 181 - Scheduler started
+22:52:16 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+22:52:16 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+22:52:22 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880057 is handled. Duration 233 ms by bot id=6624200761
+22:53:42 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880058 is handled. Duration 250 ms by bot id=6624200761
+22:54:19 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+22:54:19 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+22:54:19 - base
+[INFO] start:
+ 181 - Scheduler started
+22:54:20 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+22:54:20 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+22:54:22 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880059 is handled. Duration 296 ms by bot id=6624200761
+22:55:39 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+22:55:39 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+22:55:39 - base
+[INFO] start:
+ 181 - Scheduler started
+22:55:39 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+22:55:39 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+22:55:46 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880060 is handled. Duration 266 ms by bot id=6624200761
+22:56:29 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+22:56:29 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+22:56:29 - base
+[INFO] start:
+ 181 - Scheduler started
+22:56:29 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+22:56:29 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+22:56:38 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880061 is handled. Duration 280 ms by bot id=6624200761
+22:56:55 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880062 is handled. Duration 234 ms by bot id=6624200761
+23:01:07 - base
+[INFO] add_job:
+ 454 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+23:01:07 - base
+[INFO] _real_add_job:
+ 895 - Added job "CurrencyService.update_currency_rates" to job store "default"
+23:01:07 - base
+[INFO] start:
+ 181 - Scheduler started
+23:01:07 - dispatcher
+[INFO] start_polling:
+ 527 - Start polling
+23:01:07 - dispatcher
+[INFO] _polling:
+ 341 - Run polling for bot @until_test_bot id=6624200761 - 'until_test_bot'
+23:01:10 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880063 is handled. Duration 265 ms by bot id=6624200761
+23:01:31 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880064 is handled. Duration 234 ms by bot id=6624200761
+23:02:04 - dispatcher
+[INFO] feed_update:
+ 172 - Update id=899880065 is handled. Duration 328 ms by bot id=6624200761

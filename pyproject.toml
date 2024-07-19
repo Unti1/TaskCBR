@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "taskcbr"
+version = "0.1.0"
+description = ""
+authors = ["Unti1 <kostyuchenko.work@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.10.0"
+redis = "^5.0.7"
+aiohttp = "^3.9.5"
+apscheduler = "^3.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
