@@ -3,14 +3,10 @@ version: '3.8'
 services:
   bot:
     build: .
-    environment:
-      - BOT_TOKEN=${BOT_TOKEN}
-      - REDIS_HOST=redis
-    depends_on:
-      - redis
     volumes:
-      - ./src:/app/src
-    command: python src/main.py
+      - .:/app
+      - ./settings:/app/settings
+    command: python main.py
 
   redis:
     image: redis:alpine
